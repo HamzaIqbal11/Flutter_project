@@ -22,27 +22,23 @@ class Meat$FishView extends StatelessWidget {
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12), color: color.reccolor),
         ),
-        Column(
-          children: [
-            Text(
-              Text1,
-              style: TextStyle(fontSize: 20, color: Colors.black),
-            ),
-            Text(
-              Text2,
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-            Spacer(),
-            Text(
-              "Starting From",
-              style: TextStyle(fontSize: 15, color: Colors.grey),
-            ),
-            Text(
-              Text3,
-              style: TextStyle(fontSize: 18, color: Colors.blue),
-            ),
-          ],
-        )
+        Text(
+          Text1,
+          style: TextStyle(fontSize: 20, color: Colors.black),
+        ),
+        Text(
+          Text2,
+          style: TextStyle(fontSize: 15, color: Colors.grey),
+        ),
+        Spacer(),
+        Text(
+          "Starting From",
+          style: TextStyle(fontSize: 15, color: Colors.grey),
+        ),
+        Text(
+          Text3,
+          style: TextStyle(fontSize: 18, color: Colors.blue),
+        ),
       ]),
     );
   }

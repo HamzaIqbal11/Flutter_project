@@ -7,4 +7,6 @@ class color {
   static Color boxcolor = Color(0xffFFC83A);
   static Color greycolor = Color.fromARGB(255, 214, 212, 212);
   static Color reccolor = Color(0xffFFDC83);
+  static Color red = Colors.red;
+  static Color black = Colors.black;
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mini_project/Screens/grocery/grocery1/customwidget/more.dart';
 
 import '../../../categories/category2/category2.dart';
 import '../../../favourites/favouritesview.dart';
@@ -18,8 +19,8 @@ class _CustomBottomState extends State<CustomBottom2> {
   List screens = [
     Grocery2(),
     Category2(),
-    favourites(),
-    Category2(),
+    FavoriteView(),
+    // MorePopup(),
   ];
 
   @override
@@ -100,27 +101,31 @@ class _CustomBottomState extends State<CustomBottom2> {
                     size: 20,
                   ),
           ),
-          IconButton(
-            //enableFeedback: false,
+          // IconButton(
+          //   //enableFeedback: false,
 
-            onPressed: () {
-              setState(() {
-                selectedindex = 3;
-              });
-            },
+          //   // onPressed: () {
+          //   //   MorePopup();
+          //   // },
 
-            icon: selectedindex == 3
-                ? const Icon(
-                    Icons.person,
-                    color: Colors.black,
-                    size: 25,
-                  )
-                : const Icon(
-                    Icons.person_outline,
-                    color: Colors.black,
-                    size: 25,
-                  ),
-          ),
+          //   icon: selectedindex == 3
+          //       ? const Icon(
+          //           Icons.person,
+          //           color: Colors.black,
+          //           size: 25,
+          //         )
+          //       : const Icon(
+          //           Icons.person_outline,
+          //           color: Colors.black,
+          //           size: 25,
+          //         ),
+          // ),
+          PopupMenuButton(
+              itemBuilder: (context) => [
+                    PopupMenuItem(child: Text("Hello")),
+                    PopupMenuItem(child: Text("Hello")),
+                    PopupMenuItem(child: Text("Hello"))
+                  ]),
         ],
       ),
     );
